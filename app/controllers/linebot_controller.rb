@@ -25,7 +25,7 @@ class LinebotController < ApplicationController
       when Line::Bot::Event::Message
         case event.type
         when Line::Bot::Event::MessageType::Text
-          if event.massage['text'].eql?('アンケート')
+          if event.message['text'].eql?('アンケート')
             client.reply_message(event['replyToken'], template)
           end
         end
