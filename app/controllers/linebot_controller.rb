@@ -1,6 +1,6 @@
 class LinebotController < ApplicationController
   require 'line/bot'
-  
+
   protect_from_forgery :expect => [:callback]
 
   def client
@@ -56,7 +56,7 @@ class LinebotController < ApplicationController
             "type": "message",
             "label": "いいえ",
             "text": "いいえ"
-;          }
+          }
         ]
       }
     }
